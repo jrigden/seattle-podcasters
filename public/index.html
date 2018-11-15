@@ -1,249 +1,74 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-
-
-
-    <title>Seattle Podcasters</title>
+    <title>Sticky Footer Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
+    <!-- Custom styles for this template -->
     <style>
-        main {
-            padding-top: 1rem;
-        }
-        main h1 {
-            font-size: 2rem;
-            
-        }
-        main h2 {
-            font-size: 1.5rem;
-        }
-
-.fa-facebook, .fa-facebook-square {
-    color: #3b5998
-}
-.fa-twitter, .fa-twitter-square {
-    color: #00aced
-}
-.fa-linkedin, .fa-linkedin-square {
-    color: #007bb6
-}
-
-        .share-buttons {
-            text-align: center;
-        }
-
-        .share-buttons  a {
-            color: black;
-            padding: 1rem;
-        }
-        
-        ul.share-buttons{
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons li{
-  display: inline;
-}
-
-ul.share-buttons .sr-only{
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-<meta name="description" content="{{ page_details.description }}">
-    <meta name="author" content="{{ page_details.author }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta property="og:description" content="{{ page_details.description }}">
-    <meta property="og:image" content="{{ page_details.image }}">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="{{ page_details.title }}">
-    <meta property="og:title" content="{{ page_details.title }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ page_details.url }}">
+        /* Sticky footer styles
+      -------------------------------------------------- */
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        margin-bottom: 60px; /* Margin bottom by footer height */
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Set the fixed height of the footer here */
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
+      }
 
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="{{ page_details.twitter_creator }}">
-    <meta name="twitter:description" content="{{ page_details.description }}">
-    <meta name="twitter:image" content="{{ page_details.twitter_image }}">
-    <meta name="twitter:site" content="{{ page_details.twitter_site }}">
-    <meta name="twitter:title" content="{{ page_details.title }}">
-    <meta name="twitter:url" content="{{ page_details.url }}">
-    
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
 
+      .container {
+        width: auto;
+        max-width: 680px;
+        padding: 0 15px;
+      }  
+  
     </style>
-
-
   </head>
 
   <body>
 
     <main role="main" class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5 podcast-list text-center">
-                <h1 >Seattle Podcasters</h1>
-                <p >A group of Seattle area podcasters</p>
+      <h1 class="mt-5">Seattle Podcasters</h1>
+      <p class="lead">A group of Seattle area podcasters</p>
 
-                <h2 >Meetings</h2>
-                <p >
-                    Our next meetup will be on December 4, 2019 at
-                    <br>
-                    <a href="https://optimismbrewing.com/">Optimism Brewing Company</a>
+      <h2 class="mt-5">Meetings</h2>
+      <p class="lead">Our next meetup will be on December 4, 2019 at
+          <br>
+          <a href="https://optimismbrewing.com/">Optimism Brewing Company</a>
+      </p>
 
-                
-                </p>
+      <h2 class="mt-5">Chat</h2>
+      <p class="lead">There is a <a href="https://join.slack.com/t/seattlepodcasters/shared_invite/enQtNDgyMzE5MTY5ODk0LWViZmE0OWFmMzg0YTY0NTQ0NDEyN2U0YTIwMjk3MGY3OGQ2ZjdkMTQyNzQ2YTJmMzBlNmVkMzQwMzliMjRlYWM">Slack Channel</a> for people to chat in between meeting.
 
-                <h2 >Chat</h2>
-                <p>There is a Slack channel for people to chat in between meeting.
-                    <br>
-                    <strong><a href="https://join.slack.com/t/seattlepodcasters/shared_invite/enQtNDgyMzE5MTY5ODk0LWViZmE0OWFmMzg0YTY0NTQ0NDEyN2U0YTIwMjk3MGY3OGQ2ZjdkMTQyNzQ2YTJmMzBlNmVkMzQwMzliMjRlYWM">Slack</a></strong>
-                </p>
+      </p>
 
-
-                <h2 class="text-center">The List</h2>
-                <p>
-                    We've been working on a list of Seattle area podcasts. These shows don't necessarily have any affiliation with this group. This is just a list of Seattle area podcasts.
-                    <br>
-                    So check out,
-                    <br>
-                    <strong>
-                        <a href="https://podcastlist.net/seattle/">The Complete List of Seattle Podcast List</a>
-                </strong>
-                </p>
-            </div>
-
-
-        </div>
     </main>
 
-
-    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Share</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center">
-                        Add a podcast to the list.
-                    </p>
-                    <p>   
-
-                            <form action="https://formspree.io/jasonrigden@jasonrigden.com" method="POST">
-                                    <div class="form-group">
-                                      <label for="InputEmail">Your Email</label>
-                                      <input type="email" name="_replyto" class="form-control" id="InputEmail" type="email aria-describedby="emailHelp" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                            <label for="InputText">Tell Me About the Show. Don't forget the URL.</label>
-                                            <textarea class="form-control" name="name" id="exampleFormControlTextarea1" rows="3"></textarea>
-    
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                  </form>                        
-
-
-                    </p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Share</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center">
-                        Please share this page on social media.
-                    </p>
-                    <p>   
-
-                            <ul class="share-buttons">
-                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcrypto.podcastlist.net&quote=TITLETITLE" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><i class="fab fa-facebook-square fa-4x" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a></li>
-                                    <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcrypto.podcastlist.net&text=TITLETITLE:%20http%3A%2F%2Fcrypto.podcastlist.net&via=mr_rigden" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fab fa-twitter-square fa-4x" aria-hidden="true"></i><span class="sr-only">Tweet</span></a></li>
-                                    <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcrypto.podcastlist.net&title=TITLETITLE&summary=DESCDESC&source=http%3A%2F%2Fcrypto.podcastlist.net" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fab fa-linkedin fa-4x" aria-hidden="true"></i><span class="sr-only">Share on LinkedIn</span></a></li>
-                                  </ul>
-                        
-                    </p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-      
-      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">About</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    This site was made my <a href="https://twitter.com/mr_rigden">Jason Rigden</a>
-                </p>
-                <p>   
-                    I made this site because the iTune "search" function is absolutely awful. It's kind of like using AltaVista in the 1990's. Calling it useless is being too nice. Finding niche content has become almost impossible because of keyword stuffing. So, I made this list. I made one for cryptocurrency podcasts and one for Seattle podcasts.
-                </p>
-                <p>
-                    If you would like to make a site like this, just DM me on Twitter.
-                </p>
-
-                <p>
-                    I also hosts the podcast, <a href="https://itunes.apple.com/us/podcast/talking-cryptocurrency/id1388099603?mt=2app=podcast">Talking Cryptocurrency</a>
-                </p>
-            </div>
-          </div>
-        </div>
-      </div>
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">
-        </span>
+        <span class="text-muted">This page can be edited at <a href="https://github.com/jrigden/seattle-podcasters/">here</a></span>
       </div>
     </footer>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129001854-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-129001854-1');
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
